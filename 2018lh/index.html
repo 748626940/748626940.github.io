@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Keywords" content="2018年全国两会,中国青年网" />
+    <meta itemprop="description" name="description" content="2018年全国两会,中国青年网" />
+    <meta itemprop="name" content="2018年全国两会,中国青年网"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>2018年全国两会_中国青年网</title>
+    <link rel="stylesheet" href="images/animate.min.css">
+    <link rel="stylesheet" href="images/20180207lhstyle.css">
+    <script src="http://www.youth.cn/images/jquery-index-1.9.1.js"></script>
+    <script src="http://news.youth.cn/images/jquery.hiSlider.min.js"></script>
+    <script src="http://news.youth.cn/images/20171127mySystem.js"></script>
+    <script src="images/2018lhtujie.min.js"></script>
+    <script src="images/jquery.easing.1.3_fpsl.js"></script>
+    <script>
+        $(document).ready(function($) {
+            $(".TujieC").tujie({
+                tablist:".TujieList",
+                playimg:".TujieLeft",
+                beigin:0
+            })
+        });
+    </script>
+    <script>
+        setTimeout( function() {
+            $(".oneCard").fadeOut(500)
+        },5000);
+    </script>
+</head>
+<body>
+<!--第一屏-->
+<div class="oneCard">
+    <div class="cardBox">
+        <div class="onebbg">
+            <img src="images/20180227lhonebbg.png" alt="">
+        </div>
+        <div class="onetit1">
+            <img src="images/20180227lhtit1.png" alt="">
+        </div>
+        <div class="oneqing">
+            <img src="images/20180227lhoneqing.png" alt="">
+        </div>
+    </div>
+</div>
+<!--第二屏-->
+<div class="banner">
+    <div class="bannerBox">
+        <div class="bannerL">
+            <div class="bannerVideo">
+                <a href="#" target="_blank">
+                    <img src="http://qnzs.youth.cn/zt/201709/W020180206304593900383.jpg" width="450" height="250" alt="">
+                    <div class="play"><img src="images/20180207lhplay.png" alt=""></div>
+                    <div class="boxk"></div>
+                    <p>祭灶、迎春、大扫除，为啥“小年”日期有不同？</p>
+                </a>
+            </div>
+        </div>
+        <div class="bannerR">
+            <div class="bannerTxt">
+                <p>
+                    中国经济运行保持在合理区间，始终是中高速增长，四年来增速波动也就是1个百分点左右，可以说是平稳的。
+                    而且这不是靠大水漫灌的强刺激来获得的，而是通过推动产业、消费升级，使经济结构优化取得新进展…
+                    <a href="#" target="_blank">[详情]</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--导航-->
+<div class="topHead">
+    <div class="topNav">
+        <div class="navLogo">
+            <a href="http://www.youth.cn/" target="_blank"><img src="http://news.youth.cn/images/20170221qinglogo.jpg" alt="" /></a>
+            <a href="http://qnzs.youth.cn/" target="_blank"><img src="http://news.youth.cn/images/20170221shenglogo.jpg" alt="" /></a>
+            <a href="#"><img src="images/20180227lhtopnav.png" alt="" /></a>
+        </div>
+        <ul>
+            <li><a href="#" target="_blank">独家消息</a></li>
+            <li><a href="#" target="_blank">视频报道</a></li>
+            <li><a href="#" target="_blank">高清图集</a></li>
+            <li><a href="#" target="_blank">两会时评</a></li>
+        </ul>
+    </div>
+</div>
+<!--头条关注-->
+<div class="mainNew">
+    <div class="mainNewBox">
+        <img class="ttlogo" src="images/20180107lhtoutiaologo.png" alt="">
+        <div class="bigNew">
+            <h1><a href="#" target="_blank">弄潮 逐梦 习主席“新年喝彩”激发青年奋斗新</a></h1>
+            <p>
+                <a href="#" target="_blank">中国青年网授权播发一三五纲要</a>&nbsp;&nbsp;
+                <a href="#" target="_blank">中国青年网授权播发一三五纲要</a>&nbsp;&nbsp;
+                <a href="#" target="_blank">中国青年网授权播发一三五纲要</a>&nbsp;&nbsp;
+            </p>
+        </div>
+        <div class="topNew_scroll">
+            <p class="topNew_scrollNet">本网原创</p>
+            <div id="gongao">
+                <div style="" id="scroll_div" class="scroll_div">
+                    <div id="scroll_begin">
+                        <span>2018-03-05</span><a href="#" target="_blank">1中国青年网授权播发一三五纲要</a>
+                        <span>2018-03-06</span><a href="#" target="_blank">2中国青年网授权播发一三五纲要</a>
+                        <span>2018-03-07</span><a href="#" target="_blank">3中国青年网授权播发一三五纲要</a>
+                        <span>2018-03-08</span><a href="#" target="_blank">4中国青年网授权播发一三五纲要</a>
+                        <span>2018-03-09</span><a href="#" target="_blank">5中国青年网授权播发一三五纲要</a>
+                    </div>
+                    <div id="scroll_end"></div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            //头部滚动新闻
+            function ScrollImgLeft(){
+                var speed=50;
+                var scroll_begin = document.getElementById("scroll_begin");
+                var scroll_end = document.getElementById("scroll_end");
+                var scroll_div = document.getElementById("scroll_div");
+                scroll_end.innerHTML=scroll_begin.innerHTML;
+                function Marquee(){
+                    if(scroll_end.offsetWidth-scroll_div.scrollLeft<=0)
+                        scroll_div.scrollLeft-=scroll_begin.offsetWidth;
+                    else
+                        scroll_div.scrollLeft++;
+                }
+                var MyMar=setInterval(Marquee,speed);
+                scroll_div.onmouseover=function() {clearInterval(MyMar);}
+                scroll_div.onmouseout=function() {MyMar=setInterval(Marquee,speed);}
+            }
+            ScrollImgLeft();
+        </script>
+    </div>
+</div>
+<!--折线星-->
+<div class="star">
+    <div class="star1">
+        <i>1959</i>
+        <p>全国人民代表大会和中国人民政治协商会议全国委员会同步举行，“两会”概念应运而生。</p>
+    </div>
+    <div class="star2">
+        <i>2015</i>
+        <p>出台《国务院政府工作报告》，并召开总理记者会。</p>
+    </div>
+</div>
+<!--日历-->
+<div class="concent">
+    <div class="Time">
+        <div class="time2018">
+            <img src="images/20180207lh2018time.png" alt="">
+        </div>
+        <div class="channelNav1">
+            <ul class="timebox">
+                <li class="ono"><span>3.5</span><em>逐梦之音的</em></li>
+                <li><span>3.6</span><em>逐梦之音的</em></li>
+                <li><span>3.7</span><em>逐梦之音的</em></li>
+                <li><span>3.7</span><em>逐梦之音</em></li>
+                <li><span>3.7</span><em>逐梦之音</em></li>
+                <li><span>3.7</span><em>逐梦之音</em></li>
+                <li><span>3.7</span><em>逐梦之音</em></li>
+                <li><span>3.7</span><em>逐梦之音</em></li>
+                <li><span>3.7</span><em>逐梦之音的</em></li>
+                <li><span>3.7</span><em>逐梦之音</em></li>
+                <li><span>3.7</span><em>逐梦之音</em></li>
+                <li><span>3.7</span><em>逐梦之音</em></li>
+                <li><span>3.13</span><em>逐梦之音</em></li>
+                <li><span>3.14</span><em>逐梦之音</em></li>
+                <li><span>3.15</span><em style="background-image:none">逐梦之音</em></li>
+            </ul>
+        </div>
+        <div class="timeL"></div>
+        <div class="timeR"></div>
+        <div class="clearfix"></div>
+    </div>
+    <!--4日新闻-->
+    <div class="foc_layer1">
+        <div class="my_focus">
+            <ul class="hiSlider hiSlider1">
+                <li class="hiSlider-item">
+                    <div class="f_new">
+                        <a href="#" target="_blank"><img src="http://www.youth.cn/qclz/pic/201802/W020180208298221173185.png" alt=""></a>
+                        <p><a href="#" target="_blank">标题</a></p>
+                    </div>
+                </li>
+                <li class="hiSlider-item">
+                    <div class="f_new">
+                        <a href="#" target="_blank"><img src="http://picture.youth.cn/qtdb/201802/W020180208085271062646.jpg" alt=""></a>
+                        <p><a href="#" target="_blank">标题</a></p>
+                    </div>
+                </li>
+                <li class="hiSlider-item">
+                    <div class="f_new">
+                        <a href="#" target="_blank"><img src="http://www.youth.cn/qclz/pic/201802/W020180208298221173185.png" alt=""></a>
+                        <p><a href="#" target="_blank">标题</a></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="con_right">
+            <div class="con_rightNew">
+                <em><a href="#" target="_blank">人厉害还是风厉害？环保部长谈治霾</a></em>
+                <p>十二届全国人大四次会议今日上午在梅地亚中心举行记者会，
+                    环境保护部部长陈吉宁就“加强生态环境保护”的相关问题回答中外记者的提问<a href="#" target="_blank">［详情］</a>
+                </p>
+            </div>
+            <div class="con_rightNew">
+                <em><a href="#" target="_blank">人厉害还是风厉害？环保部长谈治霾</a></em>
+                <p>十二届全国人大四次会议今日上午在梅地亚中心举行记者会，
+                    环境保护部部长陈吉宁就“加强生态环境保护”的相关问题回答中外记者的提问<a href="#" target="_blank">［详情］</a>
+                </p>
+            </div>
+            <p class="red_new">
+                <span>头 条</span>
+                <a href="#" target="_blank">习近平抵达圣地亚哥对智利共和国进行国事访问</a>
+            </p>
+            <p class="red_new">
+                <span>社 会</span>
+                <a href="#" target="_blank">习近平抵达圣地亚哥对智利共和国进行国事访问</a>
+            </p>
+            <p class="red_new">
+                <span>生 活</span>
+                <a href="#" target="_blank">习近平抵达圣地亚哥对智利共和国进行国事访问</a>
+            </p>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <!--5日新闻-->
+    <div class="foc_layer1" style="display:none;">
+        <div class="my_focus">
+            <ul class="hiSlider hiSlider1">
+                <li class="hiSlider-item">
+                    <div class="f_new">
+                        <a href="#" target="_blank"><img src="http://www.youth.cn/qclz/pic/201802/W020180208298221173185.png" alt=""></a>
+                        <p><a href="#" target="_blank">标题</a></p>
+                    </div>
+                </li>
+                <li class="hiSlider-item">
+                    <div class="f_new">
+                        <a href="#" target="_blank"><img src="http://picture.youth.cn/qtdb/201802/W020180208085271062646.jpg" alt=""></a>
+                        <p><a href="#" target="_blank">标题</a></p>
+                    </div>
+                </li>
+                <li class="hiSlider-item">
+                    <div class="f_new">
+                        <a href="#" target="_blank"><img src="http://www.youth.cn/qclz/pic/201802/W020180208298221173185.png" alt=""></a>
+                        <p><a href="#" target="_blank">标题</a></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="con_right">
+            <div class="con_rightNew">
+                <em><a href="#" target="_blank">人厉害还是风部长谈治霾</a></em>
+                <p>十二届全国人大四次会议今日上午在梅地亚中心举行记者会，
+                    环境保护部部长陈吉宁就“加强生态环境保护”的相关问题回答中外记者的提问<a href="#" target="_blank">［详情］</a>
+                </p>
+            </div>
+            <div class="con_rightNew">
+                <em><a href="#" target="_blank">人厉害还是风厉害？环保部长谈治霾</a></em>
+                <p>十二届全国人大四次会议今日上午在梅地亚中心举行记者会，
+                    环境保护部部长陈吉宁就“加强生态环境相关问题回答中外记者的提问<a href="#" target="_blank">［详情］</a>
+                </p>
+            </div>
+            <p class="red_new">
+                <span>头 条</span>
+                <a href="#" target="_blank">习近平抵达圣地亚哥对智利共和国进行国事访问</a>
+            </p>
+            <p class="red_new">
+                <span>社 会</span>
+                <a href="#" target="_blank">习近平抵智利共和国进行国事访问</a>
+            </p>
+            <p class="red_new">
+                <span>生 活</span>
+                <a href="#" target="_blank">习近平抵达圣地亚哥对智利共和国进行国事访问</a>
+            </p>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="foc_layer1" style="display:none;">
+        3
+    </div>
+    <div class="foc_layer1" style="display:none;">
+4
+    </div>
+    <div class="foc_layer1" style="display:none;">
+5
+    </div>
+    <div class="foc_layer1" style="display:none;">
+        3
+    </div>
+    <div class="foc_layer1" style="display:none;">
+        4
+    </div>
+    <div class="foc_layer1" style="display:none;">
+        5
+    </div>
+    <div class="foc_layer1" style="display:none;">
+6
+    </div>
+    <div class="foc_layer1" style="display:none;">
+7
+    </div>
+    <div class="foc_layer1" style="display:none;">
+8
+    </div>
+    <div class="foc_layer1" style="display:none;">
+9
+    </div>
+    <div class="foc_layer1" style="display:none;">
+        3
+    </div>
+    <div class="foc_layer1" style="display:none;">
+        4
+    </div>
+    <div class="foc_layer1" style="display:none;">
+        5
+    </div>
+</div>
+<script>
+    $(".channelNav1 ul li").click(function(){
+        $(".channelNav1 ul li").eq($(this).index()).addClass("ono").siblings().removeClass('ono');
+        $(".foc_layer1").hide().eq($(this).index()).show();
+    });
+</script>
+<script>
+    var timeR=$(".timeR"),timeL=$(".timeL"),timebox=$(".timebox"),foc_layer1=$(".foc_layer1"),timeboxli = timebox.find("li");
+    var li_num1=timeboxli.length;
+    var ul_num1=0;
+    timeboxli.each(function(i){timeboxli.eq(i).mouseenter(function(){$(this).addClass("ono")})})
+    function ulleft1(){
+        ul_num1++;
+        if(ul_num1>0){ul_num1=0;}
+
+        timebox.animate({"left":90*ul_num1+"px"})
+    }
+    function ulright1(){
+        ul_num1--;
+        if(-ul_num1>li_num1-7){ul_num1=-(li_num1-7);}
+        timebox.animate({"left":90*ul_num1+"px"})
+    }
+    timeL.on("click",function(){
+        ulleft1()
+    })
+    timeR.on("click",function(){
+        ulright1()
+    })
+    timeboxli.each(function(i){
+        timeboxli.eq(i).on("mouseover",function(){
+            $(this).addClass("ono").siblings().removeClass("ono");
+            foc_layer1.css("display","none");
+            foc_layer1.eq(i).css("display","block");
+        })
+    })
+</script>
+<div class="clearfix"></div>
+<!--两会全景-->
+<div class="concent">
+    <div class="vr_scene"></div>
+    <div class="vrBox">
+        <div class="vrBox_top">
+            <div class="vrBox_topl">
+                <div class="topl_img">
+                    <a href="#" target="_blank">
+                        <img src="http://www.youth.cn/qclz/pic/201802/W020180209283410264389.jpg" width="400" height="365" alt="">
+                        <span></span>
+                    </a>
+                </div>
+                <div class="topl_txt">
+                    <div class="vrBox_txt mt50 ml15">
+                        <em><a href="#" target="_blank">时事政治</a></em>
+                        <p class="vrBox_txt1"><a href="#" target="_blank">习近平会见梁振英</a></p>
+                        <p class="vrBox_txt2">
+                            <a href="#" target="_blank">
+                                红歌会网次日转载后影响进一步扩大，也为此惹祸上身，
+                                半夜里遭遇大规模黑客攻击，持续了近两天，导致网站瘫痪无法正常访问。这正邪之争，未有穷期。
+                            </a>
+                        </p>
+                        <span>3月11日 14:32</span>
+                    </div>
+                </div>
+            </div>
+            <div class="vrBox_topr">
+                <img src="http://wenhua.youth.cn/xwjj/xw/201802/W020180209326909842805.jpg" width="344" height="365" alt="">
+                <div class="white_zhao"></div>
+                <div class="vrBox_txt" style="position: absolute;top:50px;left: 50px;z-index: 10">
+                    <em style="width: 149px;background:url('images/20180207lhvrhsbg.png');"><a href="#" target="_blank">中国颜色</a></em>
+                    <p class="vrBox_txt1"><a href="#" target="_blank">习近平会见梁振英</a></p>
+                    <p class="vrBox_txt2">
+                        <a href="#" target="_blank">
+                            红歌会网次日转载后影响进一步扩大，也为此惹祸上身，
+                            半夜里遭遇大规模黑客攻击，持续了近两天，导致网站瘫痪无法正常访问。这正邪之争，未有穷期。
+                        </a>
+                    </p>
+                    <span>3月11日 14:32</span>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="vrBox_bottom">
+            <div class="vrBox_bottoml">
+                <img src="http://wenhua.youth.cn/xwjj/xw/201802/W020180209326909842805.jpg" width="344" height="365" alt="">
+                <div class="white_zhao1"></div>
+                <div class="vrBox_txt" style="position: absolute;top:80px;left: 50px;z-index: 10">
+                    <em style="width: 149px;background:url('images/20180207lhvrhsbg.png');"><a href="#" target="_blank">网红另一面</a></em>
+                    <p class="vrBox_txt1"><a href="#" target="_blank">互联网＋新人类</a></p>
+                    <p class="vrBox_txt2">
+                        <a href="#" target="_blank">
+                            红歌会网次日转载后影响进一步扩大，也为此惹祸上身，
+                            半夜里遭遇大规模黑客攻击，持续了近两天，导致网站瘫痪无法正常访问。这正邪之争，未有穷期。
+                        </a>
+                    </p>
+                    <span>3月11日 14:32</span>
+                </div>
+            </div>
+            <div class="vrBox_bottomr">
+                <a href="#" target="_blank">
+                    <img src="http://wenhua.youth.cn/xwjj/xw/201802/W020180209326909842805.jpg" width="656" height="365" alt="">
+                    <span></span>
+                    <p>熊晓鸽：创业是一种生活方式的选择。</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".vrBox_topr").mouseover(function () {
+            $(".white_zhao").css("opacity","0.3")
+        });
+        $(".vrBox_topr").mouseleave(function () {
+            $(".white_zhao").css("opacity","0.4")
+        })
+        $(".vrBox_bottoml").mouseover(function () {
+            $(".white_zhao1").css("opacity","0.3")
+        });
+        $(".vrBox_bottoml").mouseleave(function () {
+            $(".white_zhao1").css("opacity","0.4")
+        })
+    </script>
+    <iframe id="test" name="test" scrolling="no" src="http://news.youth.cn/zt/2017qglh/zljzh/index_22310.htm" width="100%" height="920px" frameborder="0"></iframe>
+</div>
+<!--互动-->
+<div class="hd"></div>
+<div class="hdBox">
+    <div class="concent">
+        <img style="position:absolute;top:38px;left:96px;" src="images/20180207lhqnzswlh.png" alt="">
+
+        <div class="wenpoint">
+            <ul class="li_a">
+                <li style="width: 80px;height: 80px;line-height: 80px;top: 0;left: 90px">"十三五"</li>
+                <li style="width: 78px;height: 78px;line-height: 78px;top: 207px;left: 65px">大国外交</li>
+                <li style="width: 98px;height: 98px;line-height: 98px;top: 90px;left: 10px">创新驱动</li>
+                <li style="width: 76px;height: 76px;line-height: 76px;top: 55px;left: 175px">依法治国</li>
+                <li style="width: 94px;height: 94px;line-height: 94px;top: 157px;left: 163px">从严治党</li>
+                <li style="width: 100px;height: 100px;line-height: 100px;top: 75px;left: 275px">深化改革</li>
+                <li style="width: 100px;height: 100px;line-height: 100px;top: 195px;left: 312px">扶贫攻坚</li>
+                <li style="width: 87px;height: 87px;line-height: 87px;top: 25px;left: 380px">环境治理</li>
+            </ul>
+        </div>
+        <div class="hdimg">
+            <a href="#" target="_blank"><img src="http://picture.youth.cn/qtdb/201802/W020180212315995423708.png" width="300" height="350" alt=""></a>
+        </div>
+        <div class="hdtxt">
+            <p class="hdtxtp1"><a href="#" target="_blank">图表新闻一</a></p>
+            <p class="hdtxtp2"><i></i> 图表新闻简单介绍及主题内容区图表新闻简单介绍及主题内容</p>
+        </div>
+    </div>
+</div>
+<!--智库看两会-->
+<div class="zkklhtit"></div>
+<div class="zkklh">
+    <div class='silder-box3 silder-box-3'>
+        <div class='silder'>
+            <ul>
+                <li>
+                    <a href="#" target="_blank"><img src="http://cartoon.youth.cn/zxzx/201802/W020180228324949503622.jpg"></a>
+                    <a href="#" target="_blank">
+                        <div class="kxp">
+                            <p>近平抵达圣地亚哥进</p>
+                            <i>一头野猪和数只狗在泥泞的竞技场内互相攻击，直到任意一方受伤后，比赛才会结束，这是一场被称为“野猪打斗”的比赛。</i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><img src="http://youxi.youth.cn/djjj/201802/W020180228331796710755.jpg"></a>
+                    <a href="#" target="_blank">
+                        <div class="kxp">
+                            <p>近平抵达圣地亚哥进只狗在泥泞的竞技场内互相攻击，直到</p>
+                            <i>一头野猪和数只狗在泥泞的竞技场内互相攻击，直到任意一方受伤后，比赛才会结束，这是一场被称为“野猪打斗”的比赛。</i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><img src="http://www.youth.cn/qclz/pic/201802/W020180228410861902187.jpg"></a>
+                    <a href="#" target="_blank">
+                        <div class="kxp">
+                            <p>近平抵达圣地亚哥进</p>
+                            <i>一头野猪和数只狗在泥泞的竞技场内互相攻击，直到任意一方受伤后，比赛才会结束，这是一场被称为“野猪打斗”的比赛。</i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><img src="http://cartoon.youth.cn/zxzx/201802/W020180228324949503622.jpg"></a>
+                    <a href="#" target="_blank">
+                        <div class="kxp">
+                            <p>近平抵达圣地亚哥进</p>
+                            <i>一头野猪和数只狗在泥泞的竞技场内互相攻击，直到任意一方受伤后，比赛才会结束，这是一场被称为“野猪打斗”的比赛。</i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><img src="http://youxi.youth.cn/djjj/201802/W020180228331796710755.jpg"></a>
+                    <a href="#" target="_blank">
+                        <div class="kxp">
+                            <p>近平抵达圣地亚哥进</p>
+                            <i>一头野猪和数只狗在泥泞的竞技场内互相攻击，直到任意一方受伤后，比赛才会结束，这是一场被称为“野猪打斗”的比赛。</i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><img src="http://www.youth.cn/qclz/pic/201802/W020180228410861902187.jpg"></a>
+                    <a href="#" target="_blank">
+                        <div class="kxp">
+                            <p>近平抵达圣地亚哥进</p>
+                            <i>一头野猪和数只狗在泥泞的竞技场内互相攻击，直到任意一方受伤后，比赛才会结束，这是一场被称为“野猪打斗”的比赛。</i>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class='silder-button3 btl'></div>
+        <div class='silder-button3 btr'></div>
+    </div>
+</div>
+<!--图解两会-->
+<div class="tjlhtit"></div>
+<div class="tjlh">
+    <div class="concent">
+        <div class="lhTujie">
+            <div class="TujieBox">
+                <div class="w1000 TujieC">
+                    <div class="TujieLeft">
+                        <div><a href="#" target="_blank"><img src="http://www.youth.cn/jy/pic/201801/W020180122529406802847.jpg" width="435" height="560" border="0" alt=" "/></a></div>
+                        <div><a href="#" target="_blank"><img src="http://www.youth.cn/jy/pic/201801/W020180122529406802847.jpg" width="435" height="560" border="0" alt=" "/></a></div>
+                        <div><a href="#" target="_blank"><img src="http://www.youth.cn/jy/pic/201801/W020180122529406802847.jpg" width="435" height="560" border="0" alt=" "/></a></div>
+                        <div><a href="#" target="_blank"><img src="http://www.youth.cn/jy/pic/201801/W020180122529406802847.jpg" width="435" height="560" border="0" alt=" "/></a></div>
+                        <div><a href="#" target="_blank"><img src="http://www.youth.cn/jy/pic/201801/W020180122529406802847.jpg" width="435" height="560" border="0" alt=" "/></a></div>
+                        <div><a href="#" target="_blank"><img src="http://www.youth.cn/jy/pic/201801/W020180122529406802847.jpg" width="435" height="560" border="0" alt=" "/></a></div>
+                    </div>
+                    <div class="TujieRight">
+                        <div class="TujieList">
+                            <ul>
+                                <li><b>1</b>祭灶、迎春、大扫除，为啥“小年”日期有不同？</li>
+                                <li><b>2</b>祭灶、迎春、大扫除，为啥“小年”日期有不同？</li>
+                                <li><b>3</b>祭灶、迎春、大扫除，为啥“小年”日期有不同？</li>
+                                <li><b>4</b>祭灶、迎春、大扫除，为啥“小年”日期有不同？</li>
+                                <li><b>5</b>祭灶、迎春、大扫除，为啥“小年”日期有不同？</li>
+                                <li><b>6</b>祭灶、迎春、大扫除，为啥“小年”日期有不同？</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--部委发布会-->
+<div class="bigbg">
+    <div class="bwtit"></div>
+    <div class="concent">
+        <div class="buweiMetting">
+            <div class="channelNav4">
+                <ul class="buweifabuhui" style="left: 0;">
+                    <li class="onss">教育部</li>
+                    <li>央行</li>
+                    <li>环保部</li>
+                    <li>国资委</li>
+                    <li>外交部</li>
+                    <li>发改委</li>
+                    <li style="display:none">全国人大</li>
+                    <li style="display:none">全国政协</li>
+                    <li style="display:none">住建部</li>
+                    <li style="display:none">交通部</li>
+                </ul>
+            </div>
+            <div class="hl_scrool_leftbtn"></div>
+            <div class="hl_scrool_rightbtn"></div>
+            <div class="foc_layer4" style="display: block;">
+                <div class="foc_layer4l">
+                    <a href="#" target="_blank"><img src="http://news.youth.cn/zt/2017qglh/bwfbh/wjb/wjtp/201703/W020170309510899463426.jpg" alt=" " width="300" border="0" height="270"></a>
+                    <p><a href="#" target="_blank">教育部部长陈宝生答记者问</a></p>
+                </div>
+                <div class="foc_layer4r">
+                    <div class="con_rightNew">
+                        <em><a href="#" target="_blank">没解决好悬崖村孩子求学 感到非常羞愧</a></em>
+                        <p class="foc_layer4rp"> 悬崖村这个地方的贫困孩子为了求学，爬上爬下，每天在危险中行进，我们感到非常羞愧，我们没有解决好这个问题。<a href="#" target="_blank">［详情］</a>
+                        </p>
+                    </div>
+                    <div class="con_rightNew">
+                        <em><a href="#" target="_blank">不提倡某些省15年免费教育 要从国情出发</a></em>
+                        <p class="foc_layer4rp"> 从强制角度，如果说向上延伸或者向下延伸，这会带来很多问题，我们现在不具有这样的社会基础和共识。从普及，即法定，是义务，这样就减少了学前3年教育和高...<a href="#" target="_blank">［详情］</a>
+                        </p>
+                    </div>
+                    <div class="con_rightNew">
+                        <em><a href="#" target="_blank">向106万30年以上在乡村从教老师颁发荣誉证</a></em>
+                        <p class="foc_layer4rp"> 我们向106万30年以上在乡村从教的老师颁发了荣誉证书，这在共和国历史上是第一次。这么大规模地颁发荣誉证，就是想通过这样的精神奖励，营造教师在乡村从教...<a href="#" target="_blank">［详情］</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="foc_layer4" style="display: none;">
+                <div class="foc_layer4l">
+                    <a href="#" target="_blank"><img src="http://news.youth.cn/zt/2017qglh/bwfbh/wjb/wjtp/201703/W020170309510899463426.jpg" alt=" " width="300" border="0" height="270"></a>
+                    <p><a href="#" target="_blank">22教育部部长陈宝生答记者问</a></p>
+                </div>
+                <div class="foc_layer4r">
+                    <div class="con_rightNew">
+                        <em><a href="#" target="_blank">22没解决好悬崖村孩子求学 感到非常羞愧</a></em>
+                        <p class="foc_layer4rp"> 悬崖村这个地方的贫困孩子为了求学，爬上爬下，每天在危险中行进，我们感到非常羞愧，我们没有解决好这个问题。<a href="#" target="_blank">［详情］</a>
+                        </p>
+                    </div>
+                    <div class="con_rightNew">
+                        <em><a href="#" target="_blank">不提倡某些省15年免费教育 要从国情出发</a></em>
+                        <p class="foc_layer4rp"> 从强制角度，如果说向上延伸或者向下延伸，这会带来很多问题，我们现在不具有这样的社会基础和共识。从普及，即法定，是义务，这样就减少了学前3年教育和高...<a href="#" target="_blank">［详情］</a>
+                        </p>
+                    </div>
+                    <div class="con_rightNew">
+                        <em><a href="#" target="_blank">向106万30年以上在乡村从教老师颁发荣誉证</a></em>
+                        <p class="foc_layer4rp"> 我们向106万30年以上在乡村从教的老师颁发了荣誉证书，这在共和国历史上是第一次。这么大规模地颁发荣誉证，就是想通过这样的精神奖励，营造教师在乡村从教...<a href="#" target="_blank">［详情］</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="foc_layer4" style="display: none;">
+3
+            </div>
+            <div class="foc_layer4" style="display: none;">
+4
+            </div>
+            <div class="foc_layer4" style="display: none;">
+5
+            </div>
+            <div class="foc_layer4" style="display: none;">
+6
+            </div>
+        </div>
+        <script>
+            var btnright=$(".hl_scrool_rightbtn"),btnleft=$(".hl_scrool_leftbtn"),buwei=$(".buweifabuhui"),foc_layer4=$(".foc_layer4"),buweili = buwei.find("li");
+            var li_num=buweili.length;
+            var ul_num=0;
+            buweili.each(function(i){buweili.eq(i).mouseenter(function(){$(this).addClass("onss")})})
+            function ulleft(){
+                ul_num++;
+                if(ul_num>0){ul_num=0;}
+
+                buwei.animate({"left":250*ul_num+"px"})
+            }
+            function ulright(){
+                ul_num--;
+                if(-ul_num>li_num-6){ul_num=-(li_num-6);}
+                buwei.animate({"left":250*ul_num+"px"})
+            }
+            btnleft.on("click",function(){
+                ulleft()
+            })
+            btnright.on("click",function(){
+                ulright()
+            })
+            buweili.each(function(i){
+                buweili.eq(i).on("mouseover",function(){
+                    $(this).addClass("onss").siblings().removeClass("onss");
+                    foc_layer4.css("display","none");
+                    foc_layer4.eq(i).css("display","block");
+                })
+            })
+        </script>
+    </div>
+    <div class="clearfix"></div>
+    <!--中国梦践行者-->
+    <div class="zgmjxz"></div>
+    <div class="concent">
+        <ul class="zgmjxzBox">
+            <li style="top: 0;left: 0">
+                <img src="images/20180207lhzgmlogo.png" alt="">
+            </li>
+            <li style="top: 0;left: 204px">
+                <a href="#" target="_blank">
+                    <img src="images/20180207lhzgmphoto.png" alt="">
+                    <div class="zgmbg">
+                        <div class="zgmtxt">
+                            <i>两会</i>
+                            <span>青年之声和央视新闻联合推出品牌栏目《两会有啥事 我们帮你问》最佳平台</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li style="top: 0;left: 408px">
+                <a href="#" target="_blank">
+                    <img src="images/20180207lhzgmphoto.png" alt="">
+                    <div class="zgmbg">
+                        <div class="zgmtxt">
+                            <i>两会</i>
+                            <span>青年之声和央视新闻联合推出品牌栏目《两会有啥事 我们帮你问》最佳平台</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li style="top: 0;left: 612px">
+                <a href="#" target="_blank">
+                    <img src="images/20180207lhzgmphoto.png" alt="">
+                    <div class="zgmbg">
+                        <div class="zgmtxt">
+                            <i>两会</i>
+                            <span>青年之声和央视新闻联合推出品牌栏目《两会有啥事 我们帮你问》最佳平台</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li style="top: 0;left: 816px">
+                <img src="images/20180207lhhjlogo.png" alt="">
+            </li>
+            <li style="top: 175px;left: 102px">
+                <a href="#" target="_blank">
+                    <img src="images/20180207lhzgmphoto.png" alt="">
+                    <div class="zgmbg">
+                        <div class="zgmtxt">
+                            <i>两会</i>
+                            <span>青年之声和央视新闻联合推出品牌栏目《两会有啥事 我们帮你问》最佳平台</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li style="top: 175px;left: 307px">
+                <a href="#" target="_blank">
+                    <img src="images/20180207lhzgmphoto.png" alt="">
+                    <div class="zgmbg">
+                        <div class="zgmtxt">
+                            <i>两会</i>
+                            <span>青年之声和央视新闻联合推出品牌栏目《两会有啥事 我们帮你问》最佳平台</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li style="top: 175px;left: 511px">
+                <img src="images/20180207lhgtlogo.png" alt="">
+            </li>
+            <li style="top: 175px;left: 715px">
+                <a href="#" target="_blank">
+                    <img src="images/20180207lhzgmphoto.png" alt="">
+                    <div class="zgmbg">
+                        <div class="zgmtxt">
+                            <i>两会</i>
+                            <span>青年之声和央视新闻联合推出品牌栏目《两会有啥事 我们帮你问》最佳平台</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li style="top: 350px;left: 0">
+                <img src="images/20180207lhrslogo.png" alt="">
+            </li>
+            <li style="top: 350px;left: 204px">
+                <a href="#" target="_blank">
+                    <img src="images/20180207lhzgmphoto.png" alt="">
+                    <div class="zgmbg">
+                        <div class="zgmtxt">
+                            <i>两会</i>
+                            <span>青年之声和央视新闻联合推出品牌栏目《两会有啥事 我们帮你问》最佳平台</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li style="top: 350px;left: 408px">
+                <img src="images/20180207lhjxzlogo.png" alt="">
+            </li>
+            <li style="top: 350px;left: 612px">
+                <a href="#" target="_blank">
+                    <img src="images/20180207lhzgmphoto.png" alt="">
+                    <div class="zgmbg">
+                        <div class="zgmtxt">
+                            <i>两会</i>
+                            <span>青年之声和央视新闻联合推出品牌栏目《两会有啥事 我们帮你问》最佳平台</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li style="top: 350px;left: 816px">
+                <img src="images/20180207lhrylogo.png" alt="">
+            </li>
+        </ul>
+        <script>
+
+                $(".zgmjxzBox li").hover(function(){
+                    $(this).find('div:not(:animated)').animate({top:"0px"}, {easing:"easeInOutExpo"}, 50, function(){});
+                },function () {
+                    $(this).find('.zgmtxt').animate({top:"212px"}, {easing:"easeInOutExpo"}, 50, function(){});
+                });
+
+        </script>
+    </div>
+    <!--图话-->
+    <div class="tuha"></div>
+    <div class="exclusive-box">
+        <ul id="carousel" class="carousel clearfix" style="width: 1000px; height: 450px;">
+            <TRS_DOCUMENTS ID="19大嘉宾访谈" NUM="6" STARTPOS="0">
+                <trs_record num="1">
+                    <a href="<TRS_DOCUMENT URLISABS='TRUE' FIELD='_Recurl'/>" target="_blank" class="carousel-item out" style="width: 209.222px; cursor: pointer; height: 162.073px; left: 120.157px; top: 83.5348px; z-index: 44; background-image: none;" >
+                        <TRS_appendix INDEX="0" MODE="pic" AUTOLINK="false" target="_blank" EXTRA="width='350' height='270'">
+                            <img src="../site157/W020170922580319294453.jpg" border="0" alt="" />
+                        </TRS_appendix>
+        <span><TRS_Document FIELD="docpeople" TARGET="_blank" autolink="false">
+            吴敏霞
+        </TRS_Document></span>
+                    </a>
+                </trs_record>
+                <trs_record num="1">
+                    <a href="<TRS_DOCUMENT URLISABS='TRUE' FIELD='_Recurl'/>" target="_blank" class="carousel-item out" style="width: 209.222px; cursor: pointer; height: 162.073px; left: 120.157px; top: 83.5348px; z-index: 44; background-image: none;">
+                        <TRS_appendix INDEX="0" MODE="pic" AUTOLINK="false" target="_blank" EXTRA="width='350' height='270'">
+                            <img src="../site157/W020170922580319294453.jpg" border="0" alt="" />
+                        </TRS_appendix>
+        <span><TRS_Document FIELD="docpeople" TARGET="_blank" autolink="false">
+            吴敏霞
+        </TRS_Document></span>
+                    </a>
+                </trs_record>
+                <trs_record num="1">
+                    <a href="<TRS_DOCUMENT URLISABS='TRUE' FIELD='_Recurl'/>" target="_blank" class="carousel-item out" style="width: 209.222px; cursor: pointer; height: 162.073px; left: 120.157px; top: 83.5348px; z-index: 44; background-image: none;" >
+                        <TRS_appendix INDEX="0" MODE="pic" AUTOLINK="false" target="_blank" EXTRA="width='350' height='270'">
+                            <img src="../site157/W020170922580319294453.jpg" border="0" alt="" />
+                        </TRS_appendix>
+        <span><TRS_Document FIELD="docpeople" TARGET="_blank" autolink="false">
+            吴敏霞
+        </TRS_Document></span>
+                    </a>
+                </trs_record>
+                <trs_record num="1">
+                    <a href="<TRS_DOCUMENT URLISABS='TRUE' FIELD='_Recurl'/>" target="_blank" class="carousel-item out" style="width: 209.222px; cursor: pointer; height: 162.073px; left: 120.157px; top: 83.5348px; z-index: 44; background-image: none;" >
+                        <TRS_appendix INDEX="0" MODE="pic" AUTOLINK="false" target="_blank" EXTRA="width='350' height='270'">
+                            <img src="../site157/W020170922580319294453.jpg" border="0" alt="" />
+                        </TRS_appendix> <span><TRS_Document FIELD="docpeople" TARGET="_blank" autolink="false">
+                        吴敏霞
+                    </TRS_Document></span>
+                    </a>
+                </trs_record>
+                <trs_record num="1">
+                    <a href="<TRS_DOCUMENT URLISABS='TRUE' FIELD='_Recurl'/>" target="_blank" class="carousel-item out" style="width: 209.222px; cursor: pointer; height: 162.073px; left: 120.157px; top: 83.5348px; z-index: 44; background-image: none;" >
+                        <TRS_appendix INDEX="0" MODE="pic" AUTOLINK="false" target="_blank" EXTRA="width='350' height='270'">
+                            <img src="../site157/W020170922580319294453.jpg" border="0" alt="" />
+                        </TRS_appendix>
+        <span><TRS_Document FIELD="docpeople" TARGET="_blank" autolink="false">
+            吴敏霞
+        </TRS_Document></span>
+                    </a>
+                </trs_record>
+                <trs_record num="1">
+                    <a href="<TRS_DOCUMENT URLISABS='TRUE' FIELD='_Recurl'/>" target="_blank" class="carousel-item out" style="width: 209.222px; cursor: pointer; height: 162.073px; left: 120.157px; top: 83.5348px; z-index: 44; background-image: none;" >
+                        <TRS_appendix INDEX="0" MODE="pic" AUTOLINK="false" target="_blank" EXTRA="width='350' height='270'">
+                            <img src="../site157/W020170922580319294453.jpg" border="0" alt="" />
+                        </TRS_appendix>
+        <span><TRS_Document FIELD="docpeople" TARGET="_blank" autolink="false">
+            吴敏霞
+        </TRS_Document></span>
+                    </a>
+                </trs_record>
+            </TRS_DOCUMENTS>
+        </ul>
+        <div class="ex-btn clearfix">
+            <a class="ex-arr ex-left"></a>
+            <a class="ex-arr ex-right"></a>
+        </div>
+        <div class="hide cardata">
+            <ul id="carousel" class="carousel clearfix">
+                <!-- 数据结构，与上面主体结构的li数量一致 -->
+                <TRS_DOCUMENTS ID="19大嘉宾访谈" NUM="6" STARTPOS="0">
+                    <li class="item"><a href="<TRS_DOCUMENT URLISABS='TRUE' FIELD='_Recurl'/>" target="_blank" class="carousel-item out"><TRS_appendix INDEX="0" MODE="pic" AUTOLINK="false" target="_blank" EXTRA="width='350' height='270'">
+                        <img src="../site157/W020170922580319294453.jpg" border="0" alt="" />
+                    </TRS_appendix><span><TRS_Document FIELD="docpeople" TARGET="_blank" autolink="false">
+                        吴敏霞
+                    </TRS_Document></span></a></li>
+                </TRS_DOCUMENTS>
+            </ul>
+            <div class="ex-btn clearfix">
+                <a class="ex-arr ex-left"></a>
+                <a class="ex-arr ex-right"></a>
+            </div>
+            <div class="hide cardata">
+                <ul id="carousel" class="carousel clearfix">
+                    <!-- 数据结构，与上面主体结构的li数量一致 -->
+                    <TRS_DOCUMENTS ID="19大嘉宾访谈" NUM="6" STARTPOS="0">
+                        <li class="item"><a href="#" target="_blank" class="carousel-item out">
+                            <TRS_appendix UPLOAD="true" INDEX="0" MODE="pic" AUTOLINK="false" target="_blank">
+                                <img src="../site157/W020170922580319294453.jpg" border="0" alt="" /> </TRS_appendix>
+                            <span><TRS_Document FIELD="docpeople" TARGET="_blank" autolink="false">吴敏霞</TRS_Document></span></a></li>
+                    </TRS_DOCUMENTS>
+                </ul>
+            </div>
+        </div>
+        <script src="images/jquery.carousel.customed.js"></script>
+        <script src="images/jquery.mousewheel.js"></script>
+        <script>
+            //3D轮播
+            ! function() {
+                function rollrollroll() {
+                    var carousel,
+                            btnPrev = document.querySelector(".ex-left"),
+                            btnNext = document.querySelector(".ex-right");
+                    carousel = $('#carousel').carousel({
+                        width: 1000,
+                        height: 450,
+                        itemWidth: 300,
+                        horizontalRadius: 420,
+                        verticalRadius: 80,
+                        resize: false,
+                        mouseScroll: false,
+                        mouseDrag: false,
+                        scaleRatio: 0.7,
+                        scrollbar: false,
+                        tooltip: false,
+                        mouseWheel: true,
+                        mouseWheelReverse: true,
+                        autoScroll: 0,
+                        autoScrollDirection: "next",
+                        autoScrollDelay: 3E3
+                    });
+                    carousel.scrollToItem(0);
+
+
+                    function nextItem() {
+                        carousel.scrollToNext();
+                    }
+
+                    function previousItem() {
+                        carousel.scrollToPrevious();
+                    }
+                    function onItemSelect(event) {
+                        $('#text #selected-title').html(event.data.title);
+                        $('#text #selected-description').html(event.data.description);
+                    }
+                    btnPrev.onclick = previousItem;
+                    btnNext.onclick = nextItem;
+
+                }
+                rollrollroll();
+            }()
+        </script>
+    </div>
+</div>
+<!--媒体合作-->
+<div class="mthz"></div>
+<ul class="mthzBox">
+    <li><a href="#" target="_blank"><img src="http://news.youth.cn/zt/2017qglh/mthz/201702/W020170228698470998996.jpg" alt=""></a></li>
+    <li><a href="#" target="_blank"><img src="http://news.youth.cn/zt/2017qglh/mthz/201702/W020170228698470998996.jpg" alt=""></a></li>
+    <li><a href="#" target="_blank"><img src="http://news.youth.cn/zt/2017qglh/mthz/201702/W020170228698470998996.jpg" alt=""></a></li>
+    <li><a href="#" target="_blank"><img src="http://news.youth.cn/zt/2017qglh/mthz/201702/W020170228698470998996.jpg" alt=""></a></li>
+    <li><a href="#" target="_blank"><img src="http://news.youth.cn/zt/2017qglh/mthz/201702/W020170228698470998996.jpg" alt=""></a></li>
+    <li><a href="#" target="_blank"><img src="http://news.youth.cn/zt/2017qglh/mthz/201702/W020170228698470998996.jpg" alt=""></a></li>
+    <li><a href="#" target="_blank"><img src="http://news.youth.cn/zt/2017qglh/mthz/201702/W020170228698470998996.jpg" alt=""></a></li>
+    <li><a href="#" target="_blank"><img src="http://news.youth.cn/zt/2017qglh/mthz/201702/W020170228698470998996.jpg" alt=""></a></li>
+    <li><a href="#" target="_blank"><img src="http://news.youth.cn/zt/2017qglh/mthz/201702/W020170228698470998996.jpg" alt=""></a></li>
+    <li><a href="#" target="_blank"><img src="http://news.youth.cn/zt/2017qglh/mthz/201702/W020170228698470998996.jpg" alt=""></a></li>
+    <li><a href="#" target="_blank"><img src="http://news.youth.cn/zt/2017qglh/mthz/201702/W020170228698470998996.jpg" alt=""></a></li>
+    <li><a href="#" target="_blank"><img src="http://news.youth.cn/zt/2017qglh/mthz/201702/W020170228698470998996.jpg" alt=""></a></li>
+    <li><a href="#" target="_blank"><img src="http://news.youth.cn/zt/2017qglh/mthz/201702/W020170228698470998996.jpg" alt=""></a></li>
+    <li><a href="#" target="_blank"><img src="http://news.youth.cn/zt/2017qglh/mthz/201702/W020170228698470998996.jpg" alt=""></a></li>
+</ul>
+<div class="clearfix"></div>
+<!--footer-->
+<div class="youth_copyright">
+    <p><a href="#">关于我们</a> | <a href="http://news.youth.cn/ggl/201405/t20140505_5142879.htm">联系我们</a> | <a href="http://news.youth.cn/ggl/201405/t20140505_5142879.htm">广告服务</a> | <a href="http://news.youth.cn/gn/201202/t20120229_1987294.htm">人才招聘</a> | <a href="http://net.china.cn/">违法和不良信息举报</a>&nbsp;&nbsp;&nbsp;&nbsp;Youth.cn. 请发送qnb至10658000 订阅手机青年报</p>
+          <span>共青团中央主办 共青团中央网络影视中心承办 版权所有：<a href="http://www.youth.cn">中国青年网</a>&nbsp;&nbsp;<br/>
+        信息网络传播视听节目许可证0105108号 京ICP备11020872号-17 京公网安备110105007246</span>
+    <img src="http://www.youth.cn/images/130612ysq_31.gif" style="float:left;margin-top:21px;margin-right:5px;" width="139" height="50" /><p style="margin-top:12px;"><!--可信网站图片LOGO安装开始 <script src="http://kxlogo.knet.cn/seallogo.dll?sn=e12050911010020690307708&size=0"></script>  可信网站图片LOGO安装结束--></p>
+</div>
+<!--侧导航-->
+<div class="bar">
+    <ul>
+        <li><a href="#" target="_blank">头条关注</a></li>
+        <li><a href="#" target="_blank">两会全景</a></li>
+        <li><a href="#" target="_blank">总理记者会</a></li>
+        <li><a href="#" target="_blank">互动</a></li>
+        <li><a href="#" target="_blank">图解两会</a></li>
+        <li><a href="#" target="_blank">部委发布会</a></li>
+        <li><a href="#" target="_blank">中国梦践行者</a></li>
+        <li><a href="#" target="_blank">图话</a></li>
+        <li><a href="#" target="_blank">媒体合作</a></li>
+    </ul>
+    <div id="back"></div>
+</div>
+<script>
+    $('.hiSlider1').hiSlider({
+        isFlexible: true,
+        mode: 'fade',
+        isSupportTouch: false,
+        isShowTitle: false,
+        isShowPage: true,
+        titleAttr: function(curIdx){
+            return $('img', this).attr('alt');
+        }
+    });
+    $(function(){
+        $(".channelNav4 ul li").click(function(){
+            $(".channelNav4 ul li").eq($(this).index()).addClass("onss").siblings().removeClass('onss');
+            $(".foc_layer4").hide().eq($(this).index()).show();
+        });
+    });
+    $(window).scroll(function(){
+        var iTop = $(window).scrollTop();
+        if(iTop>1600){
+            $(".bar").fadeIn("slow");
+            $(".topHead").fadeIn("slow");
+        }else{
+            $(".bar").fadeOut("slow");
+            $(".topHead").fadeOut("slow");
+        }
+    });
+    $("#back").click(function(){
+        $('body,html').animate({scrollTop:0},800);
+        return false;
+    });
+    $('.silder-box-3').mySilder({
+        width:220,
+        height:300,
+        direction:'x',
+        few:1,
+        showFew:4,
+        clearance:40,
+        silderMode:'swing',
+        timeGap:700,
+        auto:true,
+        autoTime:7,
+        buttonPre:'.silder-button3.btl',
+        buttonNext:'.silder-button3.btr',
+        jz:true
+    });
+</script>
+</body>
+</html>
